@@ -21,7 +21,7 @@ The dashboard allows users to:
 - simulate multiple buffer scenarios
 - evaluate revenue vs operational trade-offs
 
-🔗 Dashboard demo: ...
+🔗 Dashboard demo: (https://huggingface.co/spaces/jedha0padavan/getaround-dashboard)
 
 ---
 
@@ -32,14 +32,14 @@ FastAPI endpoint predicting daily rental prices based on vehicle characteristics
 - Experiment tracking with MLflow
 - JSON input/output format
 
-🔗 API demo: ...
+🔗 API demo: [...](https://huggingface.co/spaces/jedha0padavan/fast-api)
 
 ---
 
 ### 📦 MLflow Experiment Tracking
 Training experiments and model tracking performed using MLflow.
 
-🔗 MLflow server: ...
+🔗 MLflow server: (https://huggingface.co/spaces/jedha0padavan/mlflow-server-final-project)
 
 ---
 
