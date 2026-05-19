@@ -1,24 +1,61 @@
-# Getaround Project – Dashboard, MLflow, and Prediction API
+# 🚗 Getaround — Pricing Optimization & Delay Impact Analysis
 
-This repository contains the files related to my **Getaround student project**, developed as part of a Data Science curriculum. 
-The goal was to analyze the impact of introducing a minimum buffer time between car rentals, and to provide tools to support decision-making and price optimization.
+End-to-end data project combining product analytics, interactive visualization, and machine learning deployment for a car-sharing platform.
 
-###  Repository structure:
+The project focuses on analyzing the impact of introducing a minimum buffer time between rentals in order to reduce operational issues caused by late vehicle returns.
 
-- **Streamlit_dashboard/**  
-  Contains the code for the interactive dashboard built with Streamlit and deployed on Hugging Face Spaces (https://huggingface.co/spaces/jedha0padavan/getaround-dashboard)
-  This subfolder includes its own README with details about the dashboard sections and usage.
+## 📊 Key Findings
 
-- **MLflow/**  
-  Contains the training script (`train.py`) used to train a regression model and track the experiment using MLflow.
-  Experiment getaround-pricing here : https://huggingface.co/spaces/jedha0padavan/mlflow-server-final-project
-  
-- **API/**  
-  Contains the code for a `/predict` API endpoint created with FastAPI.  
-  The API takes input data in JSON format and returns a predicted rental price. It is deployed on Hugging Face Spaces (https://huggingface.co/spaces/jedha0padavan/fast-api).
+- Most delays are under 1 hour, meaning short buffers can resolve a large share of problematic bookings
+- The optimal strategy was a 30-minute buffer applied only to Connect vehicles
+- This scenario resolved ~49.5% of at-risk rentals while minimizing revenue loss (~€14K)
 
+## 🚀 Project Components
 
+### 📈 Interactive Dashboard
+Built with Streamlit and deployed on Hugging Face Spaces.
 
-> Both the dashboard and the API are publicly available online via Hugging Face.  
-> This project combines data analysis, model deployment, and interactive visualization in a real-world scenario.
+The dashboard allows users to:
+- compare Connect vs Non-Connect vehicles
+- visualize delay frequency and operational impact
+- simulate multiple buffer scenarios
+- evaluate revenue vs operational trade-offs
 
+🔗 Dashboard demo: ...
+
+---
+
+### 🤖 Price Prediction API
+FastAPI endpoint predicting daily rental prices based on vehicle characteristics.
+
+- Model: Random Forest Regressor
+- Experiment tracking with MLflow
+- JSON input/output format
+
+🔗 API demo: ...
+
+---
+
+### 📦 MLflow Experiment Tracking
+Training experiments and model tracking performed using MLflow.
+
+🔗 MLflow server: ...
+
+---
+
+## 🛠️ Tech Stack
+
+Python · Pandas · Scikit-learn · Streamlit · FastAPI · MLflow · Hugging Face Spaces
+
+---
+
+## 📁 Repository Structure
+
+### `Streamlit_dashboard/`
+Interactive dashboard source code.
+
+### `MLflow/`
+Training scripts and MLflow experiment tracking.
+
+### `API/`
+FastAPI `/predict` endpoint implementation.
